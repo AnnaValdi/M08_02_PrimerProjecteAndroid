@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FirstProject</string>
+    <string name="nom">Introdueix el teu nom:</string>
+    <string name="ok">OK</string>
 </resources>

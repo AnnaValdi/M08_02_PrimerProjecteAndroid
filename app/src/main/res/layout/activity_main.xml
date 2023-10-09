@@ -9,20 +9,20 @@
         android:id="@+id/TxtNom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:hint="Introdueix el teu nom"/>
+        android:textSize="@dimen/tamText"
+        android:hint="@string/nom"/>
 
     <Button
         android:id="@+id/BtnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OK"
-        android:textSize="30sp"/>
+        android:text="@string/ok"
+        android:textSize="@dimen/tamText"/>
 
     <TextView
         android:id="@+id/LblNom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"/>
+        android:textSize="@dimen/tamText"/>
 
 </LinearLayout>

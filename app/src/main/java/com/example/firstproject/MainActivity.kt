@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,7 +20,12 @@ class MainActivity : AppCompatActivity() {
 
         btnOK.setOnClickListener{
             var text = txtNom.text.toString()
-            lblNom.text = "El teu nom és " + text
+            if(!text.equals("")) {
+                lblNom.text = "El teu nom és " + text
+            }else{
+                lblNom.text = ""
+                Toast.makeText(this, "No has introduit el teu nom", Toast.LENGTH_LONG).show()
+            }
         }
     }
 }
