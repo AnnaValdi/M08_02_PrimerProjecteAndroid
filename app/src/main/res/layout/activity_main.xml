@@ -7,11 +7,12 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/title"
-        android:text="@string/title"
-        android:textSize="@dimen/tamText"
+        android:layout_height="89dp"
+        android:layout_marginBottom="@dimen/tamText"
+        android:background="@color/grey"
         android:gravity="center"
-        android:layout_marginBottom="@dimen/tamText"/>
+        android:text="@string/title"
+        android:textSize="@dimen/tamText" />
 
     <EditText
         android:id="@+id/TxtNom"
