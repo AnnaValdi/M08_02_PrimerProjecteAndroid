@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="tamText">30sp</dimen>
+    <dimen name="tamText">20sp</dimen>
+    <dimen name="title">60sp</dimen>
+    <dimen name="Nom">300sp</dimen>
 </resources>

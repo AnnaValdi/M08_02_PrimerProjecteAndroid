@@ -5,17 +5,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:text="@string/title"
+        android:textSize="@dimen/tamText"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/tamText"/>
+
     <EditText
         android:id="@+id/TxtNom"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/Nom"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:textSize="@dimen/tamText"
-        android:hint="@string/nom"/>
+        android:hint="@string/nom"
+        android:layout_marginBottom="@dimen/tamText"/>
 
     <Button
         android:id="@+id/BtnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/ok"
         android:textSize="@dimen/tamText"/>
 
