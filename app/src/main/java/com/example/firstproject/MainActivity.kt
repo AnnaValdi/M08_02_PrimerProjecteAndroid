@@ -1,5 +1,6 @@
 package com.example.firstproject
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -18,14 +19,18 @@ class MainActivity : AppCompatActivity() {
         val btnOK: Button = findViewById(R.id.BtnOK)
         val lblNom: TextView = findViewById(R.id.LblNom)
 
-        btnOK.setOnClickListener{
+        btnOK.setOnLongClickListener{
             var text = txtNom.text.toString()
             if(!text.equals("")) {
                 lblNom.text = "El teu nom és " + text
+                txtNom.setBackgroundColor(Color.WHITE)
             }else{
                 lblNom.text = ""
                 Toast.makeText(this, "No has introduit el teu nom", Toast.LENGTH_LONG).show()
+                txtNom.setBackgroundColor(Color.RED)
             }
+            return@setOnLongClickListener true
         }
+
     }
 }
