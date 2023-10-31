@@ -8,7 +8,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="89dp"
-        android:layout_marginBottom="@dimen/tamText"
         android:background="@color/grey"
         android:gravity="center"
         android:text="@string/title"
@@ -36,5 +35,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/tamText" />
+
+    <RadioGroup
+        android:id="@+id/grpTransport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding">
+
+        <RadioButton
+            android:id="@+id/metro"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/metro"
+            android:textSize="@dimen/tamText" />
+
+        <RadioButton
+            android:id="@+id/patinet"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/patinet"
+            android:textSize="@dimen/tamText" />
+
+        <RadioButton
+            android:id="@+id/moto"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/moto"
+            android:textSize="@dimen/tamText" />
+
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/LblTransport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/tamText"/>
 
 </LinearLayout>

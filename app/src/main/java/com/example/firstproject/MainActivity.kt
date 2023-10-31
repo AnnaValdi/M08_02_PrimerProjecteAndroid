@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.TextView
 import android.widget.Toast
 
@@ -32,5 +34,39 @@ class MainActivity : AppCompatActivity() {
             return@setOnLongClickListener true
         }
 
+        val metro = findViewById<RadioButton>(R.id.metro);
+        val patinet = findViewById<RadioButton>(R.id.patinet);
+        val moto = findViewById<RadioButton>(R.id.moto);
+        val grpTr = findViewById<RadioGroup>(R.id.grpTransport);
+
+        grpTr.setOnCheckedChangeListener(){
+            radioGroup, i->
+
+            val lblTransport = findViewById<TextView>(R.id.LblTransport);
+
+            when(radioGroup.checkedRadioButtonId){
+                R.id.metro -> lblTransport.setTextColor(Color.BLUE);
+                R.id.patinet -> lblTransport.setTextColor(Color.GRAY);
+                R.id.moto -> lblTransport.setTextColor(Color.MAGENTA);
+            }
+        }
+
+        metro.setOnClickListener(){
+            updateName(metro);
+        }
+
+        patinet.setOnClickListener(){
+            updateName(patinet);
+        }
+
+        moto.setOnClickListener(){
+            updateName(moto);
+        }
+    }
+    fun updateName(button: RadioButton){
+        val lblTransport = findViewById<TextView>(R.id.LblTransport);
+
+        val name = button.text.toString();
+        lblTransport.text = name;
     }
 }

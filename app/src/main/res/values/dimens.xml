@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="tamText">20sp</dimen>
-    <dimen name="title">60sp</dimen>
-    <dimen name="Nom">300sp</dimen>
+    <dimen name="tamText">20dp</dimen>
+    <dimen name="title">60dp</dimen>
+    <dimen name="Nom">300dp</dimen>
+    <dimen name="padding">50dp</dimen>
 </resources>

@@ -3,4 +3,7 @@
     <string name="nom">Introdueix el teu nom</string>
     <string name="ok">OK</string>
     <string name="title">Wireframes PMDM</string>
+    <string name="metro">Metro</string>
+    <string name="patinet">Patinet</string>
+    <string name="moto">Moto</string>
 </resources>
